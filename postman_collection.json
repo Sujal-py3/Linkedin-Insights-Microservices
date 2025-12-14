@@ -1,0 +1,124 @@
+{
+    "info": {
+        "_postman_id": "linkedin-insights-microservice",
+        "name": "LinkedIn Insights Microservice",
+        "description": "API collection for LinkedIn Insights Microservice",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get Page Details (Scrape/DB)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/v1/pages/deepsolv",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "pages",
+                        "deepsolv"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Page Posts",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/v1/pages/deepsolv/posts",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "pages",
+                        "deepsolv",
+                        "posts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Page Summary (AI)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/v1/pages/deepsolv/summary",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "pages",
+                        "deepsolv",
+                        "summary"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Search Pages",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/v1/pages?min_followers=100",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "pages"
+                    ],
+                    "query": [
+                        {
+                            "key": "min_followers",
+                            "value": "100"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Root Check",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        ""
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
